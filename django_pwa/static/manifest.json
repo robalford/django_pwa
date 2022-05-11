@@ -5,8 +5,8 @@
      "orientation": "any",
      "scope": "/",
      "start_url": "/",
-     "name": "Djournal",
-     "short_name": "Djournal",
+     "name": "Django PWA",
+     "short_name": "Django PWA",
      "icons": [
          {
              "src": "icons/icon-192x192.png",
