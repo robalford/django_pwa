@@ -11,5 +11,16 @@
     </head>
     <body>
         <h1>Hello, Django PWA!</h1>
+        <script type="text/javascript">
+             if ('serviceWorker' in navigator) {
+                 window.addEventListener('load', () => {
+                   navigator.serviceWorker.register('/serviceworker.js', {scope: '/'}).then(function (registration) {
+                     console.log('Service Worker registered with scope: ', registration.scope);
+                   }).catch(function (err) {
+                     console.log('Service Worker registration error: ', err);
+                   });
+                 });
+             }
+         </script>
     </body>
 </html>

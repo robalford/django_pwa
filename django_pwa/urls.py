@@ -20,5 +20,10 @@ from django.urls import path
 urlpatterns = [
     path('', TemplateView.as_view(template_name='templates/home.html'), name='home', ),
     path('offline/', TemplateView.as_view(template_name='templates/offline.html'), name='offline', ),
+    path(
+         'serviceworker.js',
+         TemplateView.as_view(template_name='templates/serviceworker.js', content_type='application/javascript'),
+         name='serviceworker.js',
+     ),
     path('admin/', admin.site.urls),
 ]
