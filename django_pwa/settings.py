@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +54,9 @@ ROOT_URLCONF = 'django_pwa.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            Path(BASE_DIR, "django_pwa"),
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
