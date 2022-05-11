@@ -1,15 +1,5 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-         <meta charset="UTF-8">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"><!-- todo: this is needed for PWA as well as included for bootstrap I think -->
-         <link rel="manifest" href="{% static 'manifest.json' %}">
-         <meta name="theme-color" content="#f69435">
-         <link rel="apple-touch-icon" href="{% static 'icons/icon-192x192.png' %}">
-         <title>Default offline template</title>
-    </head>
-    <body>
-        <h1>You are currently offline.</h1>
-    </body>
-</html>
+{% extends 'templates/base.html' %}
+
+{% block main %}
+<h1>You are currently offline.</h1>
+{% endblock main %}
