@@ -35,6 +35,8 @@ const staticCacheName = "0.2.0"
    event.waitUntil(deleteOldCaches());
  });
 
+ // todo - edit this file to simplify and alter more from mozilla example. see the django package service worker code
+
  // Serve from Cache
  const cacheFirst = async ({ request, preloadResponsePromise, fallbackUrl }) => {
    const responseFromCache = await caches.match(request);
